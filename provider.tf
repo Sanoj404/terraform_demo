@@ -10,7 +10,7 @@ resource "aws_vpc" "xeu" {    #VPC name XEU
     Location  ="Bangalore"
   }
 }
-resource "aws_subnet" "subnet1" {
+resource "aws_subnet" "subnet1" { #subnet name subnet1
   vpc_id  ="${aws_vpc.xeu.id}"
   cidr_block  = "192.168.1.0/24"
   tags {
